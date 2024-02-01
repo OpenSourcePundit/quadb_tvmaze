@@ -29,7 +29,7 @@ const SingleShowPage = () => {
               <p>
                 <strong>Genre:</strong>{" "}
                 {show?.show?.genres?.map((genre) => (
-                  <span class="badge text-bg-secondary m-1">{genre}</span>
+                  <span key={genre} className="badge text-bg-secondary m-1">{genre}</span>
                 ))}
               </p>
               <p>
@@ -70,11 +70,6 @@ const SingleShowPage = () => {
                 >
                   Open Original
                 </a>
-
-                {/* <button className="btn-modal btn btn-outline-success"
-        onClick={()=>navigate(`./${show?.show?.url}`)}>
-            Open Original
-        </button> */}
 
                 <Modal show={show.show} />
               </p>

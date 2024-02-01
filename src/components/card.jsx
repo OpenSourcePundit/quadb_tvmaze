@@ -28,7 +28,7 @@ const Card = ({ show }) => {
         <p className="card-text">
           Genre:{" "}
           {show?.show?.genres?.map((genre) => (
-            <span class="badge text-bg-secondary m-1">{genre}</span>
+            <span key={genre} className="badge text-bg-secondary m-1">{genre}</span>
           ))}
         </p>
         <button

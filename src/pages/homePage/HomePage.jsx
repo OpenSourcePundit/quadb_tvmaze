@@ -17,7 +17,7 @@ const HomePage = () => {
     <div className="homepage-wrapper p-5">
       <div className="show-listing">
         {data?.map((show1) => (
-          <Card show={show1} />
+          <Card key={show1?.show?.id} show={show1} />
         ))}
       </div>
     </div>
