@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import "./modal.css"
 
 const Modal = ({show}) =>{
-    const [modal,setModal] = useState(true);
+    const [modal,setModal] = useState(false);
 
     const toggleModal = () =>{
         console.log("modal toggled",modal)
@@ -10,8 +10,7 @@ const Modal = ({show}) =>{
     }
 
     return(
-        <>
-        
+        <>        
         <button className="btn-modal btn btn-outline-success"
         onClick={toggleModal}>
             Book Tickets
@@ -22,7 +21,7 @@ const Modal = ({show}) =>{
          <div className="Overlay" onClick={toggleModal}></div>
          <div className="modal-content">
              <form action="submit">
-                 <h2>Book Tickets heading</h2>
+                 <h3>Book Tickets for {show?.name}</h3>
                  <form action="submit">
                  {/* <p><strong>Genre:</strong> {show?.show?.genre}</p> */}
                 <p><strong>Premiere:</strong> {show?.premiered}</p>

@@ -7,7 +7,7 @@ const Card = ({ show }) => {
     const navigate = useNavigate();
 
   return (
-    <div className="card" style={{ width: "20rem",height:"40rem", margin: "1rem" }}>
+    <div className="card" style={{ width: "20rem",height:"43rem", margin: "1rem" }}>
       <img
         src={show?.show?.image?.original}
         alt={show?.show?.image?.medium}
@@ -24,6 +24,12 @@ const Card = ({ show }) => {
         {show?.show?.rating?.average && <p className="card-text">
           Rating: {show?.show?.rating?.average}
         </p>}
+        <p className="card-text">
+          Language: {show?.show?.language}
+        </p>
+        <p className="card-text">
+          Type: {show?.show?.type}
+        </p>
         <p className="card-text">
           Genre: {show?.show?.genres?.map((genre)=><span class="badge text-bg-secondary m-1">{genre}</span>)}
         </p>
