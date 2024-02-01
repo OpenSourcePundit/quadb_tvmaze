@@ -4,6 +4,9 @@
   width: 100vw;
   overflow-x: hidden;
 }
+.cursor-pointer{
+  cursor: pointer;
+}
 
 .App-logo {
   height: 40vmin;

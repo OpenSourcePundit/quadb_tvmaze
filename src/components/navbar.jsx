@@ -10,14 +10,19 @@ const NavBar = () => {
           alt="Logo"
           width="70"
           height="70"
-          className="d-inline-block align-text-top"
+          className="d-inline-block align-text-top cursor-pointer"
+          onClick={() => {
+            navigate("/");
+          }}
         ></img>
-        <h3>QuadB-Tech</h3>
+        <h3 className="cursor-pointer" onClick={() => {
+            navigate("/");
+          }}>QuadB-Tech</h3>
         <button
           onClick={() => {
             navigate("/");
           }}
-          className="btn btn-outline-success"
+          className="btn btn-outline-success cursor-pointer"
         >
           Home
         </button>
