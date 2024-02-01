@@ -15,8 +15,7 @@ const HomePage =() =>{
 
 
     return(
-        <div className="homepage-wrapper">
-            <h3>Shows:</h3>
+        <div className="homepage-wrapper p-5">
             <div className="show-listing">
             {data?.map((show1)=><Card show={show1}  />)}
             </div>

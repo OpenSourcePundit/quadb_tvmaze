@@ -5,7 +5,6 @@ const Modal = ({show}) =>{
     const [modal,setModal] = useState(false);
 
     const toggleModal = () =>{
-        console.log("modal toggled",modal)
         setModal(!modal)
     }
 
