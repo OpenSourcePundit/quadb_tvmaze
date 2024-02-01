@@ -71,8 +71,9 @@ const SingleShowPage = () => {
                   Open Original
                 </a>
 
-                <Modal show={show.show} />
+                
               </p>
+              <Modal show={show.show} />
             </div>
           </div>
         </>

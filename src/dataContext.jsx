@@ -16,6 +16,10 @@ const DataProvider = ({children}) =>{
             console.log("Error:",error)
         }
     }
+    useEffect(() => {
+        fetchData();
+      }, []);
+
     
     return(
         <DataContext.Provider value={{
